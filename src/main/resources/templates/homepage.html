@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:background-color="http://www.w3.org/1999/xhtml"
+      xmlns:margin="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: blue;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: blue;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+
+    <div class="subnav">
+        <button class="subnavbtn">Lims PROD  <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="https://oferty.hamilton.com.pl" target="_blank">Oferty produkcja</a>
+            <a href="https://portal2.hamilton.com.pl/pracownik" target="_blank">Zlecenia produkcja</a>
+            <a href="https://newlims.hamilton.com.pl" target="_blank">Lims produkcja</a>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Lims UAT <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="https://oferty-test.hamilton.com.pl" target="_blank">Oferty uat</a>
+            <a href="https://portal2-test.hamilton.com.pl/pracownik" target="_blank">Zlecenia pracownik uat</a>
+            <a href="https://portal2-test.hamilton.com.pl/" target="_blank">Zlecenia klient uat</a>
+            <a href="https://newlims-uat.hamilton.com.pl" target="_blank">Lims uat</a>
+
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Kadry <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="https://portalkadry.hamilton.com.pl:8443/xpertis" target="_blank">Portal kadry Wnioski</a>
+            <a href="https://hrnest.io/Account/LogOn>HRnest Delegacje" target="_blank">Delegacje HRnest</a>
+            <a href="#link3">Link 3</a>
+            <a href="#link4">Link 4</a>
+        </div>
+    </div>
+    <a href="#contact">Contact</a>
+</div>
+
+<div style="padding:0 16px">
+    <h3>Wybieramy</h3>
+    <p>Najedź myszką i wybierz interesujący adres</p>
+</div>
+
+</body>
+</html>
