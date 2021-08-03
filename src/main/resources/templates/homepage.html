@@ -125,7 +125,14 @@ body {
     <p>Najedź myszką i wybierz interesujący adres</p>
       <br>
       <br>
-      <h3> Dodano IFS do menu !<h3>
+      <h3> Dodano IFS do menu !</h3>
+       <p id="blink"> This is an example of blinking text using JS. </p>
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
 </div>
 
 </body>
